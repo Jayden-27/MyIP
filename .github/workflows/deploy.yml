@@ -1,0 +1,3 @@
+- name: Trigger Cloudflare Pages Deploy
+  run: |
+    curl -X POST "${{ secrets.CF_PAGES_DEPLOY_HOOK }}"
